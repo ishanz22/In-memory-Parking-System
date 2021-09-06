@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleAncherPain" prefHeight="240.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label prefHeight="34.0" prefWidth="459.0" style="-fx-background-color: #d2d0d0;" text="    Add Vehicle">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="152.0" text="No of Passengers">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="103.0" text="Maximum Weight">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="52.0" text="Vehicle Number">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="257.0" layoutY="52.0" text="Vehicle type">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <JFXButton layoutX="308.0" layoutY="163.0" onAction="#OnActionAddVehicle" style="-fx-border-color: black; -fx-border-radius: 8;" text="Add Vehicle">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtVehicleNumber" focusColor="#d2d0d0" labelFloat="true" layoutX="135.0" layoutY="46.0" prefHeight="25.0" prefWidth="107.0" unFocusColor="#d2d0d0">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtMaximumWeight" focusColor="#d2d0d0" labelFloat="true" layoutX="135.0" layoutY="99.0" prefHeight="25.0" prefWidth="107.0" unFocusColor="#d2d0d0">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtNoOfRassengers" focusColor="#d2d0d0" labelFloat="true" layoutX="135.0" layoutY="148.0" prefHeight="25.0" prefWidth="107.0" unFocusColor="#d2d0d0">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXComboBox fx:id="comboVehicleType" focusColor="#d2d0d0" labelFloat="true" layoutX="338.0" layoutY="48.0" prefHeight="30.0" prefWidth="103.0" unFocusColor="#d2d0d0" />
+   </children>
+</AnchorPane>
